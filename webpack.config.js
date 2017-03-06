@@ -2,10 +2,11 @@
  * Created by benny on 17/3/5.
  */
 var webpack = require('webpack');//引入Webpack模块供我们调用，这里只能使用ES5语法，使用ES6语法会报错
+
 module.exports = {//注意这里是exports不是export
     entry:[
-        // 'webpack-dev-server/client?http://localhost:8080/',
-        'webpack/hot/dev-server',
+        'webpack-dev-server/client?http://localhost:8080/',
+        // 'webpack-dev-server',
         __dirname + "/src/js/root.js"
     ],//唯一入口文件，就像Java中的main方法
     output: {//输出目录
@@ -30,16 +31,14 @@ module.exports = {//注意这里是exports不是export
         ]
     },
 
-    plugins: [
-        new webpack.HotModuleReplacementPlugin({
-            test: /^(?!.*(hot)).*/,
-        })//热模块替换插件
-    ],
+    // plugins: [
+    //     new webpack.HotModuleReplacementPlugin()//热模块替换插件
+    // ],
 
-    devServer: {
-        // contentBase: './build',
-        // historyApiFallback: true,
-        inline: true,
-        port: 8080,
-    }
+    // devServer: {
+    //     // contentBase: './build',
+    //     historyApiFallback: true,
+    //     inline: true,
+    //     port: 8080,
+    // }
 };

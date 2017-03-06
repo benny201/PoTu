@@ -1,0 +1,27 @@
+.header {
+    height: 50px;
+    background-color: #FFEB3B;
+}
+
+.header-col {
+    height: 50px;
+}
+
+.header-col img{
+    height: 100%;
+    width: 100%;
+
+}
+
+.header-input {
+    align-self: flex-end;
+}
+
+.header-menu {
+    background-color: #FFEB3B !important;
+}
+
+.footer {
+    text-align: center;
+}
+
