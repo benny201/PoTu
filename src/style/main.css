@@ -1,3 +1,4 @@
+/*header*/
 .header {
     height: 50px;
     background-color: #FFEB3B;
@@ -7,11 +8,29 @@
     height: 50px;
 }
 
-.header-col img{
-    height: 100%;
-    width: 100%;
-
+.header-logo img {
+    height: 50px;
 }
+
+.user-image img {
+    height: 50px;
+    weight: 50px;
+}
+.item-image {
+    float: right;
+}
+
+.item-image img {
+    height: 250px;
+    weight: 250px;
+}
+
+
+/*.header-col img{*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+
+/*}*/
 
 .header-input {
     align-self: flex-end;
@@ -21,7 +40,23 @@
     background-color: #FFEB3B !important;
 }
 
+
+/*container*/
+.item-container {
+    width: 98%;
+    margin: 10px 0px 0px 2px;
+}
+
+.item-right-container {
+    width: 100%;
+    margin: 10px 5px 0px 2px;
+}
+
+/*footer*/
 .footer {
     text-align: center;
+    background-color: #FFEB3B;
 }
+
+
 

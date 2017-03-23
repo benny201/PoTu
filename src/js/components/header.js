@@ -4,6 +4,7 @@
 import React from 'react';
 import {Row, Col} from 'antd';
 import { AutoComplete } from 'antd';
+
 import { Menu, Icon } from 'antd';
 
 function onSelect(value) {
@@ -40,21 +41,22 @@ export default class Header extends React.Component{
         return(
             <header className="header">
                 <Row type="flex" >
-                    <Col span={2} className="header-col">
+                    <Col span={3}></Col>
+                    <Col span={2} className="header-logo">
                         <img  src="./src/images/logo.jpeg" alt="logo"/>
                     </Col>
                     <Col span={4} className="header-input">
-                        <AutoComplete
-                            dataSource={dataSource}
-                            style={{ width: 200 }}
-                            onSelect={onSelect}
-                            onChange={this.handleChange.bind(this)}
-                            placeholder="input here"
-                        />
+                        {/*<AutoComplete*/}
+                            {/*dataSource={dataSource}*/}
+                            {/*style={{ width: 200 }}*/}
+                            {/*onSelect={onSelect}*/}
+                            {/*onChange={this.handleChange.bind(this)}*/}
+                            {/*placeholder="input here"*/}
+                        {/*/>*/}
                     </Col>
-                    <Col span={9}></Col>
+                    <Col span={3}></Col>
                     <Col span={1} className="header-col">
-                        <img  src="./src/images/logo-2.png" alt="logo"/>
+                        {/*<img  src="./src/images/logo-2.png" alt="logo"/>*/}
                     </Col>
                     <Col span={6}>
                         <Menu
@@ -74,7 +76,10 @@ export default class Header extends React.Component{
                             </Menu.Item>
                         </Menu>
                     </Col>
-                    <Col span={2}>col-11</Col>
+                    <Col span={2} className="user-image">
+                        <img  src="./src/images/logo-2.png" alt="logo"/>
+                    </Col>
+                    <Col span={3}></Col>
                 </Row>
             </header>
         );

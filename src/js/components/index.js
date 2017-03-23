@@ -4,6 +4,7 @@
 import React from 'react';
 import Footer from './footer';
 import Header from './header';
+import Container from './container';
 import 'antd/dist/antd.css';
 
 export default class Index extends React.Component {
@@ -12,6 +13,7 @@ export default class Index extends React.Component {
         return (
             <div>
                 <Header/>
+                <Container/>
                 <Footer/>
             </div>
         );
