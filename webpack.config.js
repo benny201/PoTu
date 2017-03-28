@@ -5,7 +5,7 @@ var webpack = require('webpack');//引入Webpack模块供我们调用，这里�
 
 module.exports = {//注意这里是exports不是export
     entry:[
-        // 'webpack-dev-server/client?http://localhost:8080/',
+        'webpack-dev-server/client?http://localhost:8080/',
         // 'webpack-dev-server',
         __dirname + "/src/js/root.js"
     ],//唯一入口文件，就像Java中的main方法
